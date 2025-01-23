@@ -1,0 +1,3 @@
+- name: block google socks
+  action: block
+  expr: string(socks?.req?.addr) endsWith "google.com" && socks?.req?.port == 80
